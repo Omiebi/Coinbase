@@ -1,6 +1,6 @@
-/* body {
+body {
     overflow-x: hidden;
-} */
+}
 
 .container {
     width: 80%;
@@ -35,6 +35,10 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: black;
+}
+
+.nav-bar-two {
+    display: none;
 }
 
 .btn-container {
@@ -97,13 +101,12 @@ nav ul li a {
 .portfolio {
     font-size: 30px;
     margin-bottom: 20px;
-    width: ;
 }
 
 .buttons {
     display: flex;
     column-gap: 20px;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .email-box {
@@ -238,6 +241,7 @@ nav ul li a {
     margin-top: 50px;
     width: 85%;
     font-size: 25px;
+    color: blue;
 }
 
 .users {
@@ -304,8 +308,6 @@ nav ul li a {
     background-color: rgb(245, 248, 255);
     justify-content: space-between;
 }
-
-.spaceship {}
 
 .crypto-worthies {
     margin-top: 80px;
@@ -474,25 +476,300 @@ th {
 
 /* MEDIA QUERY */
 
-
-/* @media screen(max-width: 300px) {
-    .bitcoin-logo {
-        display: none;
-        background-color: red;
-    }
-} */
-
 @media screen and (max-width: 600px) {
     .crypto-card {
         display: none;
-        /* flex-direction: column; */
         background-color: red;
     }
     .right-container {
         background-color: green;
         display: flex;
     }
+    .image-container h3 {
+        color: blue;
+    }
+    .container {
+        width: 100%;
+    }
     .left-container {
-        background-color: blue;
+        width: 100%;
+    }
+    .portfolio h1 {
+        width: 100%;
+        font-size: 40px;
+    }
+    .coinbase p {
+        font-size: 20px;
+        width: 400px;
+    }
+    .container-worths h3 {
+        align-items: center;
+        width: 100%;
+    }
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    .email-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .email-box-side {
+        width: 102%;
+    }
+    body {
+        margin: 0 auto;
+    }
+    .container-worthy {
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .image-list {
+        display: none;
+    }
+    .container-worthy p {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    /* FOOTER */
+    .footer {
+        flex-direction: column;
+    }
+    .table-footer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .section-four {
+        width: 85%;
+        margin: 0 auto;
+        font-size: 22px;
+    }
+    .dollar-image {
+        flex-direction: column;
+    }
+    .section-four-image {
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+    }
+    .section-four-image-logo {
+        width: 350px;
+        justify-content: center;
+    }
+    .dollar-image-signs {
+        align-items: center;
+        margin: 0 auto;
+        width: 70px;
+    }
+    .users {
+        flex-direction: column;
+    }
+    .accounts {
+        flex-direction: column;
+    }
+    .crypto-worthies {
+        margin-bottom: 200px;
+    }
+    .spaceship {
+        display: none;
+    }
+    .section-eight-one {
+        background-color: darkblue;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .cypto-worthies-button {
+        border: none;
+        width: 120px;
+        height: 50px;
+    }
+    .storage {
+        flex-direction: column;
+        /* margin: 0 auto; */
+    }
+    .crypto-worthies {
+        text-align: center;
+    }
+    .coinbase {
+        color: blue;
+    }
+    .bitcoin-storage {
+        margin: 0 auto;
+        align-items: center;
+    }
+    .crypto-worthies-container {
+        align-items: center;
+    }
+    .menu-bar {
+        display: none;
+    }
+    .sign-in {
+        display: none;
+    }
+    .table-charts {
+        display: none;
+    }
+    .containers {
+        width: 90%;
+    }
+    .table-container {
+        width: 100%;
+    }
+    .english {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .crypto-card {
+        display: none;
+        background-color: red;
+    }
+    .right-container {
+        background-color: green;
+        display: flex;
+    }
+    .image-container h3 {
+        color: blue;
+    }
+    .container {
+        width: 100%;
+    }
+    .left-container {
+        width: 100%;
+    }
+    .portfolio h1 {
+        width: 100%;
+        font-size: 40px;
+    }
+    .coinbase p {
+        font-size: 20px;
+        width: 400px;
+    }
+    .container-worths h3 {
+        align-items: center;
+        width: 100%;
+    }
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    .email-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .email-box-side {
+        width: 102%;
+    }
+    body {
+        margin: 0 auto;
+    }
+    .container-worthy {
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .image-list {
+        display: none;
+    }
+    .container-worthy p {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    /* FOOTER */
+    .footer {
+        flex-direction: column;
+    }
+    .table-footer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .section-four {
+        width: 85%;
+        margin: 0 auto;
+        font-size: 22px;
+    }
+    .dollar-image {
+        flex-direction: column;
+    }
+    .section-four-image {
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+    }
+    .section-four-image-logo {
+        width: 350px;
+        justify-content: center;
+    }
+    .dollar-image-signs {
+        align-items: center;
+        margin: 0 auto;
+        width: 70px;
+    }
+    .users {
+        flex-direction: column;
+    }
+    .accounts {
+        flex-direction: column;
+    }
+    .crypto-worthies {
+        margin-bottom: 200px;
+    }
+    .spaceship {
+        display: none;
+    }
+    .section-eight-one {
+        background-color: darkblue;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .cypto-worthies-button {
+        border: none;
+        width: 120px;
+        height: 50px;
+    }
+    .storage {
+        flex-direction: column;
+        /* margin: 0 auto; */
+    }
+    .crypto-worthies {
+        text-align: center;
+    }
+    .coinbase {
+        color: blue;
+    }
+    .bitcoin-storage {
+        margin: 0 auto;
+        align-items: center;
+    }
+    .crypto-worthies-container {
+        align-items: center;
+    }
+    .menu-bar {
+        display: none;
+    }
+    .sign-in {
+        display: none;
+    }
+    .table-charts {
+        display: none;
+    }
+    .containers {
+        width: 90%;
+    }
+    .table-container {
+        width: 100%;
+    }
+    .english {
+        width: 50%;
     }
 }
